@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-white;
+  }
+
+  h1, h2, h3, h4, h5, h6, p, span, div, a, button, li, input, select, textarea {
+    @apply text-white;
+  }
+}
+
+/* Custom styles for dark theme with green accents */
+.text-shadow-primary {
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+.text-shadow-secondary {
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* Minecraft style borders for dark theme */
+.minecraft-border {
+  border-image-slice: 2;
+  border-image-width: 2;
+  border-image-outset: 0;
+  border-image-source: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='6' height='6'><path d='M0 2h2v2H0zM2 0h2v2H2zM4 2h2v2H4zM2 4h2v2H2z' fill='%23444'/></svg>");
+  border-image-repeat: space;
+}
+
+/* Glowing effect for buttons and elements */
+.glow-effect {
+  box-shadow: 0 0 10px rgba(0, 255, 127, 0.3);
+  transition: box-shadow 0.3s ease;
+}
+
+.glow-effect:hover {
+  box-shadow: 0 0 15px rgba(0, 255, 127, 0.5);
+}
+
+/* Custom scrollbar for dark theme */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #222;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
