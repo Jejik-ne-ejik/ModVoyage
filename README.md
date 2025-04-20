@@ -254,16 +254,6 @@ function RouterContent() {
 ```
 
 Контексты (client/src/contexts/*)  
-AuthContext - Управление аутентификацией:
-```
-interface AuthContextType {
-  user: User | null;
-  isLoading: boolean;
-  login: (username: string, password: string) => Promise<User>;
-  logout: () => void;
-  isAuthenticated: boolean;
-}
-```
 LanguageContext - Мультиязычная поддержка:
 ```
 interface LanguageContextType {
